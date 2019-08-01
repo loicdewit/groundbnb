@@ -1,3 +1,8 @@
 <h1>Welcome</h1>
 
 <%= link_to 'Sign Up', new_user_path %>
+<% if logged_in? %>
+  You are logged in!
+<% else %>
+  <%= link_to 'Sign In', '/login'%>
+<% end %>
