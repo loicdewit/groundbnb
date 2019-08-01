@@ -6,3 +6,10 @@ def signup
   fill_in('user_password_confirmation', with: 'password123')
   click_button('Create my account')
 end
+
+def signin
+  click_link('Sign In')
+  fill_in('session_email', with: 'test@email.com')
+  fill_in('session_password', with: 'password123')
+  click_button('Sign in')
+end
