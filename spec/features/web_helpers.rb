@@ -13,3 +13,10 @@ def signin
   fill_in('session_password', with: 'password123')
   click_button('Sign in')
 end
+
+def create_listing
+  click_link('Create listing')
+  fill_in('listing_name', with: 'test name')
+  fill_in('listing_description', with: 'test description')
+  click_button('Save')
+end
