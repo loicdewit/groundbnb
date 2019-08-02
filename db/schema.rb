@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_02_103515) do
+ActiveRecord::Schema.define(version: 2019_08_02_112306) do
 
   create_table "listings", force: :cascade do |t|
     t.text "description"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2019_08_02_103515) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "name"
     t.integer "price_per_night"
+    t.text "nights_available"
     t.index ["user_id"], name: "index_listings_on_user_id"
   end
 

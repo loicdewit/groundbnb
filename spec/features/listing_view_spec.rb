@@ -14,5 +14,6 @@ RSpec.describe 'Listing Features:' do
     expect(page).to have_content('test name')
     expect(page).to have_content('test description')
     expect(page).to have_content(125)
+    expect(page).to have_content('25/12/19')
   end
 end
