@@ -19,5 +19,6 @@ def create_listing
   fill_in('listing_name', with: 'test name')
   fill_in('listing_description', with: 'test description')
   fill_in('listing_price_per_night', with: 125)
+  fill_in('listing_nights_available', with: '25/12/19')
   click_button('Save')
 end
