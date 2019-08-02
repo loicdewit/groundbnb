@@ -13,5 +13,6 @@ RSpec.describe 'Listing Features:' do
     expect(page.status_code).to eq(200)
     expect(page).to have_content('test name')
     expect(page).to have_content('test description')
+    expect(page).to have_content(125)
   end
 end

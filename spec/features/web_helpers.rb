@@ -18,5 +18,6 @@ def create_listing
   click_link('Create listing')
   fill_in('listing_name', with: 'test name')
   fill_in('listing_description', with: 'test description')
+  fill_in('listing_price_per_night', with: 125)
   click_button('Save')
 end
