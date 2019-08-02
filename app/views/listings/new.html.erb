@@ -10,6 +10,10 @@
     <%= form.text_area :description %>
   </p>
   <p>
+    <%= form.label :'Price Per Night' %> <br>
+    <%= form.number_field :price_per_night %>
+  </p>
+  <p>
    <%= form.submit "Save" %>
   </p>
 <% end %>
